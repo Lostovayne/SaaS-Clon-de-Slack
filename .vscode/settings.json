@@ -1,0 +1,13 @@
+{
+    "editor.fontSize": 17,
+    "npm.enableRunFromFolder": true,
+    "editor.foldingImportsByDefault": true,
+    "git.fetchOnPull": true,
+    "editor.accessibilitySupport": "off",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.defaultColorDecorators": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "explorer.excludeGitIgnore": false,
+    "explorer.fileNesting.enabled": true,
+    "outline.collapseItems": "alwaysExpand"
+}
