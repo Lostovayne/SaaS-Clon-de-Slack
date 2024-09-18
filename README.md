@@ -23,6 +23,15 @@ Run the development server:
 
 ```bash
 npm run dev
+
+
+## 📦 Variables to set up
+- Create a .env file in the root directory and add the following variables:
+
+```
+CONVEX_DEPLOYMENT=.....
+NEXT_PUBLIC_CONVEX_URL= .......     
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
