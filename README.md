@@ -1,7 +1,7 @@
 
 # Slack clone built with Next.js
 
-![Video]("./resources/slack.webm")
+![Slack]("/resources/slack.jpeg")
 
 ## 📝 Table of contents
 
