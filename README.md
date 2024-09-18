@@ -1,7 +1,6 @@
 
 # Slack clone built with Next.js
-
-![slackimage]("./public/slack2.png")
+<img src="./public/slack2.png" style=" margin: auto; " /> 
 
 ## 📝 Table of contents
 
