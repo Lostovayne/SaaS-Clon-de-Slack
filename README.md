@@ -1,7 +1,7 @@
 
 # Slack clone built with Next.js
 
-![slack]("./public/resources/slack.jpeg")
+![slackimage]("./public/slack2.png")
 
 ## 📝 Table of contents
 
