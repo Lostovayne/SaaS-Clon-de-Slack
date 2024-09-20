@@ -79,7 +79,7 @@ const SignUpCard = ({ setState }: SignUpCardProps) => {
           Already have an account?{" "} 
           <span
             onClick={() => setState("signIn")}
-            className="hover:underline cursor-pointer text-sky-700"
+            className="hover:underline cursor-pointer text-sky-700 font-medium"
           >
             Sign in
           </span>
