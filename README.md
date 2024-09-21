@@ -1,6 +1,6 @@
-# Slack clone built with Next.js
 
-<img src="./public/slack2.png" style=" margin: auto; " />
+# Slack clone built with Next.js
+<img src="./public/slack2.png" style=" margin: auto; " /> 
 
 ## 📝 Table of contents
 
@@ -27,12 +27,11 @@ npm run dev
 
 ## 📦 Variables to set up
 - Create a .env file in the root directory and add the following variables:
-- All other variables are located in the Convex backend
+- Todas las otras variables se encuentran en el backend de convex
 
 ```
-
 CONVEX_DEPLOYMENT=.....
-NEXT_PUBLIC_CONVEX_URL= .......
+NEXT_PUBLIC_CONVEX_URL= .......     
 
 ```
 
@@ -65,4 +64,3 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-```
