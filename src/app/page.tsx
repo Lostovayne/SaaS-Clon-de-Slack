@@ -7,9 +7,7 @@ export default function Home() {
   const { signOut } = useAuthActions();
 
   const onSignOut = () => {
-    signOut().then(() => {
-      window.location.reload();
-    });
+    signOut().finally(() => window.location.reload());
   };
 
   return (
