@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import { SignInFlow } from "../types";
 import { useRouter } from "next/navigation";
+import { SignInFlow } from "../types";
 
 import { useAuthActions } from "@convex-dev/auth/react";
 import { TriangleAlert } from "lucide-react";
