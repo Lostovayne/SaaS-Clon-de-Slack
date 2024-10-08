@@ -8,6 +8,7 @@ import { SignInFlow } from "../types";
 import { useState } from "react";
 import { TriangleAlert } from "lucide-react";
 import { useAuthActions } from "@convex-dev/auth/react";
+import { useRouter } from "next/navigation";
 
 interface SignUpCardProps {
   setState: (state: SignInFlow) => void;
@@ -20,6 +21,7 @@ const SignUpCard = ({ setState }: SignUpCardProps) => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
 
+  const router = useRouter();
   const [pending, setPending] = useState(false);
   const [error, setError] = useState("");
 
@@ -33,6 +35,9 @@ const SignUpCard = ({ setState }: SignUpCardProps) => {
     setPending(true);
 
     signIn("password", { email, password, flow: "signUp" })
+      .then(() => {
+        return router.refresh();
+      })
       .catch(() => {
         setError("Something went wrong");
       })

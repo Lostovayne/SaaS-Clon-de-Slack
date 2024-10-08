@@ -7,6 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { SignInFlow } from "../types";
+import { useRouter } from "next/navigation";
 
 import { useAuthActions } from "@convex-dev/auth/react";
 import { TriangleAlert } from "lucide-react";
@@ -22,12 +23,13 @@ const SignInCard = ({ setState }: SignInCardProps) => {
   const [password, setPassword] = useState("");
   const [pending, setPending] = useState(false);
 
-  // With Password
+  const router = useRouter();
 
   const onPasswordSignIn = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setPending(true);
     signIn("password", { email, password, flow: "signIn" })
+      .then(() => router.refresh())
       .catch(() => {
         setError("Invalid email or password");
       })

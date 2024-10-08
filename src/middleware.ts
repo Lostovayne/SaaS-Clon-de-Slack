@@ -1,12 +1,13 @@
+// src/middleware.ts
+
 import {
   convexAuthNextjsMiddleware,
   createRouteMatcher,
   nextjsMiddlewareRedirect,
 } from "@convex-dev/auth/nextjs/server";
-import { CornerDownLeft } from "lucide-react";
 
-const isPublicPage = createRouteMatcher(["/auth"]);
 const isProtectedPage = createRouteMatcher(["/"]);
+const isPublicPage = createRouteMatcher(["/auth"]);
 
 export default convexAuthNextjsMiddleware((request, { convexAuth }) => {
   if (isPublicPage(request) && convexAuth.isAuthenticated()) {
